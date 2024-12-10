@@ -29,7 +29,7 @@ namespace Tyuiu.AkhtarievaNR.Sprint6.Task0.V16
             }
             catch
             {
-                MessageBox.Show("ќшибка!", "¬ведены неверные данные!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("¬ведены неверные данные!", "ќшибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

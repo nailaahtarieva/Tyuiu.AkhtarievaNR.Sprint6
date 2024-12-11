@@ -147,7 +147,7 @@
             buttonres_ANR.TabIndex = 2;
             buttonres_ANR.Text = "Выполнить";
             buttonres_ANR.UseVisualStyleBackColor = false;
-            buttonres_ANR.Click += this.buttonres_ANR_Click;
+            buttonres_ANR.Click += buttonres_ANR_Click;
             // 
             // groupBoxOutput_ANR
             // 
@@ -190,7 +190,7 @@
             Controls.Add(groupBoxIntput_ANR);
             Controls.Add(groupBoxUsl_ANR);
             Name = "FormMain";
-            Text = "Спринт 6 | Таск 0 | Вариант 16 | Ахтариева Н. Р.";
+            Text = "Спринт 6 | Таск 1 | Вариант 16 | Ахтариева Н. Р.";
             groupBoxUsl_ANR.ResumeLayout(false);
             groupBoxUsl_ANR.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

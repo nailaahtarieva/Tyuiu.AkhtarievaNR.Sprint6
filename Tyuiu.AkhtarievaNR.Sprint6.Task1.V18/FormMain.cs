@@ -33,22 +33,22 @@ namespace Tyuiu.AkhtarievaNR.Sprint6.Task1.V18
         {
             try
             {
-                int a = Convert.ToInt32(textBoxstart_ANR.Text);
-                int z = Convert.ToInt32(textBoxstop_ANR.Text);
+                int start = Convert.ToInt32(textBoxstart_ANR.Text);
+                int stop = Convert.ToInt32(textBoxstop_ANR.Text);
                 string strline;
-                int len = ds.GetMassFunction(a, z).Length;
+                int len = ds.GetMassFunction(start, stop).Length;
                 double[] mas;
                 mas = new double[len];
-                mas = ds.GetMassFunction(a, z);
+                mas = ds.GetMassFunction(start, stop);
                 textBoxres_ANR.Text = "";
                 textBoxres_ANR.AppendText("+----------+----------+" + Environment.NewLine);
-                textBoxres_ANR.AppendText("+    X     |   f(x)   +" + Environment.NewLine);
+                textBoxres_ANR.AppendText("|    X     |   f(x)   |" + Environment.NewLine);
                 textBoxres_ANR.AppendText("+----------+----------+" + Environment.NewLine);
                 for (int i = 0; i < len; i++)
                 {
-                    strline = String.Format("|{0,5:d}    |  {1,5:f2}  |", a, mas[i]);
+                    strline = String.Format("|{0,5:d}    |  {1, 5:f2}  |", start, mas[i]);
                     textBoxres_ANR.AppendText(strline + Environment.NewLine);
-                    a++;
+                    start++;
                 }
                 textBoxres_ANR.AppendText("+----------+----------+" + Environment.NewLine);
             }

@@ -174,6 +174,7 @@
             Controls.Add(groupBox1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox3);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "FormMain";
             Text = "Спринт 6 | Таск 0 | Вариант 16 | Ахтариева Н. Р.";
             Load += Form1_Load;

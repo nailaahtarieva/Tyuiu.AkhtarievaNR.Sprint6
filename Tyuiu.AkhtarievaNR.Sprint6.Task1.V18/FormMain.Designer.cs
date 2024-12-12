@@ -189,6 +189,7 @@
             Controls.Add(buttonhelp_ANR);
             Controls.Add(groupBoxIntput_ANR);
             Controls.Add(groupBoxUsl_ANR);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "FormMain";
             Text = "Спринт 6 | Таск 1 | Вариант 16 | Ахтариева Н. Р.";
             groupBoxUsl_ANR.ResumeLayout(false);

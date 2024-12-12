@@ -12,7 +12,7 @@ namespace Tyuiu.AkhtarievaNR.Sprint6.Task4.V13.Lib
             int count = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                y = (3*i) + 2 - ((2*i - i)/(Math.Cos(i))+1);
+                y = (3*i + 2) - ((2*i - i)/(Math.Cos(i)+1));
                 mas[count] = Math.Round(y, 2);
                 count++;
             }

@@ -3,7 +3,7 @@ namespace Tyuiu.AkhtarievaNR.Sprint6.Task6.V26.Lib
 {
     public class DataService : ISprint6Task6V26
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
             string resstr = "";
 
@@ -24,9 +24,6 @@ namespace Tyuiu.AkhtarievaNR.Sprint6.Task6.V26.Lib
             }
 
             return resstr.Trim();
-
-
-
         }
     }
 }

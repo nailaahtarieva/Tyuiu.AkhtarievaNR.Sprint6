@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             groupBox1 = new GroupBox();
             textBox1 = new TextBox();
             groupBox2 = new GroupBox();
@@ -95,6 +96,7 @@
             buttonHelp_ANR.TabIndex = 6;
             buttonHelp_ANR.Text = "Справка";
             buttonHelp_ANR.UseVisualStyleBackColor = true;
+            buttonHelp_ANR.Click += buttonHelp_ANR_Click;
             // 
             // buttonSave_ANR
             // 
@@ -104,6 +106,7 @@
             buttonSave_ANR.TabIndex = 5;
             buttonSave_ANR.Text = "Сохранить";
             buttonSave_ANR.UseVisualStyleBackColor = true;
+            buttonSave_ANR.Click += buttonSave_ANR_Click;
             // 
             // buttonDone_ANR
             // 
@@ -170,21 +173,24 @@
             // 
             // chartfunction
             // 
-            chartArea2.Name = "ChartArea1";
-            chartfunction.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            chartfunction.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            chartfunction.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chartfunction.Legends.Add(legend1);
             chartfunction.Location = new Point(324, 131);
             chartfunction.Name = "chartfunction";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            chartfunction.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartfunction.Series.Add(series1);
             chartfunction.Size = new Size(866, 367);
             chartfunction.TabIndex = 3;
             chartfunction.Text = "chart1";
+            title1.Name = "График функции";
+            title1.Text = "График функции";
+            chartfunction.Titles.Add(title1);
             // 
             // FormMain
             // 
